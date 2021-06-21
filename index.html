@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+</head>
+<!--
+
+Simple House
+
+https://templatemo.com/tm-539-simple-house
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/sawah5.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">SiTani</h1>
+								<h6 class="tm-site-description">Sistem Informasi Pertanian</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">About</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Selamat Datang di SiTani</h2>
+				<p class="col-12 text-center">SiTani adalah suatu terobosan bagi dunia pertanian di Indonesia. SiTani memiliki peranan penting dalam memberikan informasi, komunikasi serta sebagai media pemasaran</p>
+			</header>
+			
+			<div class="tm-paging-links" >
+				<a href="berita.html" class="tm-btn tm-btn-success">Berita</a>
+				<a href="bakul.html" class="tm-btn tm-btn-success">Info Bakul</a>
+				<a href="market.html" class="tm-btn tm-btn-success">Market</a>
+				
+			</div>
+			
+			<div class="tm-section tm-container-inner">
+				<div class="row">
+					<div class="col-md-6">
+						<figure class="tm-description-figure">
+							<img src="img/bawang3.jpg" alt="Image" class="img-fluid" />
+						</figure>
+					</div>
+					<div class="col-md-6">
+						<div class="tm-description-box"> 
+							<h3 class="tm-gallery-title">Bawang Merah</h3>
+							<p class="tm-mb-45"> Brebes merupakan sentra bawang merah terbesar di Indonesia telah memberikan kontribusi 18,5 persen produksi nasional atau 57% dari produksi Jawa Tengah.</p>
+							<a href="bawang.html" class="tm-btn tm-btn-default tm-right">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<br>
+        <br>
+		<div class="tm-section tm-container-inner">
+			<div class="row">
+				<div class="col-md-6">
+					<figure class="tm-description-figure">
+						<img src="img/padi.jpg" alt="Image" class="img-fluid" />
+					</figure>
+				</div>
+				<div class="col-md-6">
+					<div class="tm-description-box"> 
+						<h3 class="tm-gallery-title">Padi</h3>
+						<p class="tm-mb-45">Kabupaten Brebes merupakan salah satu wilayah
+							penghasil padi di Pulau Jawa dengan mayoritas penduduknya bekerja di sektor
+							pertanian. Pehitungan estimasi produksi padi yang efektif dan efisien sangat
+							diperlukan untuk mengetahui produksi padi secara cepat dan akurat sehingga
+							dapat digunakan sebagai pertimbangan dalam menentukan kebijakan suatu
+							wilayah khususnya di Kabupaten Brebes.</p>
+						<a href="padi.html" class="tm-btn tm-btn-default tm-right">Read More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="tm-footer text-center">
+		<p>SiTani</p>
+	</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
